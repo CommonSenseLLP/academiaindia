@@ -19,7 +19,7 @@ describe("docs sync", () => {
   it("keeps CONTRIBUTING test counts current", () => {
     const contributing = read("CONTRIBUTING.md");
     expect(contributing).toContain("159 tests pass + 10 deliberate skips");
-    expect(contributing).toContain("127 Vitest tests across 11 files");
+    expect(contributing).toContain("130 Vitest tests across 12 files");
   });
 
   it("keeps Makefile and dev requirements aligned with the test workflow", () => {

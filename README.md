@@ -73,7 +73,7 @@ make scrape-fresh
 # run the Python scraper test suite
 make test
 
-# run the frontend Vitest suite (127 tests across 11 files)
+# run the frontend Vitest suite (130 tests across 12 files)
 npm test
 
 # serve docs/ locally for development
