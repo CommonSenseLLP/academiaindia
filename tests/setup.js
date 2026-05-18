@@ -1,5 +1,6 @@
 // tests/setup.js
 // Provides a mock implementation for browser APIs not available in Node.
+import { vi } from 'vitest';
 
 const localStorageMock = (() => {
   let store = {};
