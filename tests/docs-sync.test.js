@@ -18,7 +18,7 @@ describe("docs sync", () => {
 
   it("keeps CONTRIBUTING test counts current", () => {
     const contributing = read("CONTRIBUTING.md");
-    expect(contributing).toContain("157 tests pass + 10 deliberate skips");
+    expect(contributing).toContain("159 tests pass + 10 deliberate skips");
     expect(contributing).toContain("127 Vitest tests across 11 files");
   });
 

@@ -133,10 +133,10 @@ Run the suite:
 make test
 ```
 
-153 tests pass + 9 deliberate skips at the time of writing; new
+159 tests pass + 10 deliberate skips at the time of writing; new
 parsers should not break the count. Frontend changes that touch
 anything under `docs/lib/` or `docs/app.js` should additionally
-keep `npm test` green (117 Vitest tests across 11 files).
+keep `npm test` green (127 Vitest tests across 11 files).
 
 ## Hall of forbidden moves
 
@@ -251,6 +251,16 @@ frontend changes. The remaining 5 lib modules (`card-helpers`,
 `render-card`, `filters`, `map`, `render-tabs`) do not yet have
 backfilled test coverage — adding tests for them when you're working
 in those files is welcome.
+
+### 2026-05-18 — Test counts refreshed; docs sync added
+
+The numbers in the 2026-05-06 entry above are superseded:
+
+- **Python (`make test`)**: 159 tests pass + 10 deliberate skips (was 153).
+- **Frontend (`npm test`)**: 127 Vitest tests across 11 files (was 117
+  across 11).
+- The docs now carry a narrow docs-sync test that checks the live
+  command names, dependency pins, and current test-floor claims.
 
 ### 2026-05-06 — Test counts refreshed; lib coverage backfilled
 
